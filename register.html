@@ -1,0 +1,45 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - Daily Choice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('login')">Login</button>
+            <button class="tab-button" onclick="showTab('signup')">Sign Up</button>
+        </div>
+        <div id="login" class="tab-content active">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button onclick="login()" type="submit">Login</button>
+            </form>
+        </div>
+        <div id="signup" class="tab-content">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button onclick="signUp()" type="submit">Sign Up</button>
+            </form>
+        </div>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+</body>
+<script>
+    function login(){
+        alert("login successful.")
+    }
+    function signUp(){
+        alert("SignUp successful.")
+    }
+</script>
+</html>
