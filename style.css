@@ -388,6 +388,7 @@ footer {
 
 .tab-button.active {
     background-color: #e63939;
+    border-bottom: 2px solid rgb(182, 168, 168);
 }
 
 /* Tab Content */
